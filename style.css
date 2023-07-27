@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+/* ***header*** */
+header{
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background-color: bisque;
+    padding: 0 2rem;
+    color: aliceblue;
+    padding: 0 2rem;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+}
+.logo a{
+    color: #000;
+}
+.logo a strong{
+    color: orangered;
+}
+.toggle{
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 1000px;
+}
+.menu li a{
+    color: #000;
+    text-decoration: none;
+}
+.btn{
+    border: 0;
+    background: orangered;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+@media all and (max-width:600px) {
+    .toggle{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+    .logo a{
+        position: relative;
+        z-index: 20;
+    }
+    .ouvrir{
+        display:block;
+    }
+    .fermer{
+        display:none;
+    }
+    .open .ouvrir{
+        display: none;
+    }
+    .open .fermer{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #626669;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+    }
+    .open .menu{
+        transform: translateX(0);
+    }
+}
+    
+/* ***section1*** */
+.section-1{
+    background-color: bisque;
+    padding: 70px;
+}
+.section-1 .class-A{
+    display: flex;
+    width: 100%;
+}
+.section-1 .class-A .text{
+    width: 700px;
+    padding: 50px;
+    justify-content: center;
+}
+.section-1 .class-A .text h1{
+font-size: 50px;
+padding: 10px;
+    
+}
+.section-1 .class-A .text p{
+font-size: 25px;
+padding: 20px;
+    
+}
+.section-1 .class-A .photo {
+    padding: 10px;
+
+}
+.section-1 .class-A .photo img{
+    width: 500px;
+}
+.btn-1{
+    color: aliceblue;
+    background-color: orangered;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+}
+.btn-2{
+    color:black;
+    background-color:white;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    margin-left: 10px;
+}
+@media all and (max-width:600px){
+    .section-1 .class-A .photo img{
+        display: none;
+    } 
+}
+.section-1 .class-B {
+    display: flex;
+    padding: 10px;
+}
+.section-1 .class-B img{
+    width: 50px;
+    border-radius: 100px;
+    
+}
+.section-1 .class-B p{
+    width: 220px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.section-1 .class-B p strong{
+    color: orangered;
+}
+
+/* section-2 */
+.section-2 h3{
+    justify-content: center;
+    align-self: center;
+    margin: 50px 500px 50px 500px;
+    font-size: 22px;
+    font-family: 'lora',serif;
+    color: #6f6f6f;
+   }
+   .class-C {
+     display: flex;
+     justify-content:space-around;
+   }
+   .section-2 .class-C img {
+     height: 50px;
+     width: 120px;
+     color: #6f6f6f;
+}
+/* secxtion-3 */
+.section-3{
+    margin: 100px;
+}
+.section-3 h2, h3{
+    margin: 10px;
+}
+.section-3 h2{
+    color:#626669;
+    font-size: 40px;
+    font-family: 'lora',serif;
+}
+.section-3 h3{
+    color: rgb(221, 105, 62);
+    font-size: 15px;
+    font-family: 'lora',serif;
+}
+
+.section-3 .class-D{
+    display: flex;
+    padding: 50px;
+}
+.section-3 .class-D .text{
+    width: 500px;
+    
+} 
+.section-3 .class-D img{
+    width: 200px;
+    height: 400px;
+}
+.section-3 h4{
+    font-size: 25px;
+    margin: 5px;
+}
+.section-3 p{
+    font-size: 20px;
+    padding: 5px;
+}
+.number{
+    font-size: 100px;
+    color: #6f6f6f;
+}
+.im-1{
+    margin-left: 300px;
+}
+.im-2{
+    margin-right: 400px;
+}
+.im-3{
+    margin-left: 400px;
+}
+
+/* section-4 */
+.section-4{
+padding: 50px;
+}
+.section-4 h2, h3{
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+}
+.section-4 h2{
+    color:#626669;
+    font-size: 40px;
+    font-family: 'lora',serif;
+}
+.section-4 h3{
+    color: rgb(221, 105, 62);
+    font-size: 15px;
+    font-family: 'lora',serif;
+}
+
+.section-4 .class-E{
+    display: flex;
+}
+   
+.section-4 button{
+    color: #000;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.section-4 .btn-3{
+    width: 100px;
+    background-color: blue;
+    padding: 5px;
+}
+.section-4 .btn-4{
+    width: 80px;
+    background-color:rgb(235, 91, 91);
+    padding: 5px;
+}
+.section-4 .btn-5{
+    width: 80px;
+    background-color:rgb(192, 149, 68);
+    padding: 5px;
+}
+.section-4 .class-E .card {
+    margin: 40px;
+    border: 1px;
+    border-radius: 20px;
+    
+}
+.section-4 .class-E .card img{
+    width: 320px;
+    height: 210px;
+}
+.section-4 .class-E .card text{
+    font-size: 20px;
+}
+
+.card .lister li{
+    list-style:orangered;
+   font-size: 22px; 
+   padding: 12px;
+   list-style-type: square;
+}
+.mets{
+    display: flex;
+    padding: 12px;
+}
+.mets i, p{
+    font-size: 25px;
+}
+.mets i{
+    color: rgb(255, 196, 0);
+    padding-right: 12px;
+}
+
+/* .section-5 */
+.section-5 {
+    display: flex;
+}
+.section-5 p{
+    font-size: 18px;
+}
+.section-5 .cards .card {
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+} 
+.section-5 .cards .card img{
+    border-radius: 100px;
+    width: 80px;
+}
+/* .section-5 .part .card-group .cards{
+    max-width: 700px;
+} */
+.section-5 .part .card-group{
+    display: flex;
+}
+.section-5 .cardek .card{
+    display: flex;
+}
+.section-5 .cardek .card img{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+/* section-6 */
+/* .section-6{
+    margin: 50px;
+} */
+.section-6 .card{
+    display: flex;
+    margin: 50px 200px 50px 200px;
+    border-radius: 10;
+}
+.section-6 p{
+    font-size: 25px; 
+}
+.section-6 h5{
+    font-size: 35px;  
+}
+
+.section-6 strong{
+    font-size: 70px;
+}
+.section-6 li{
+    font-size: 20px;
+}
+
+.section-6 h6{
+    font-size: 20px;
+    color:brown;
+}
