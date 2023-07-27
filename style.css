@@ -17,6 +17,7 @@ header{
     padding: 0 2rem;
     color: aliceblue;
     padding: 0 2rem;
+    position: fixed;
 }
 nav{
     width: 100%;
@@ -315,6 +316,7 @@ padding: 50px;
 /* .section-5 */
 .section-5 {
     display: flex;
+    background-color: bisque;
 }
 .section-5 p{
     font-size: 18px;
@@ -343,14 +345,21 @@ padding: 50px;
     padding: 10px;
 }
 /* section-6 */
-/* .section-6{
-    margin: 50px;
-} */
-.section-6 .card{
-    display: flex;
-    margin: 50px 200px 50px 200px;
-    border-radius: 10;
+.section-6{
+margin: 50px;
+    /* display: flex; */
 }
+.section-6 h2{
+    color:#626669;
+    font-size: 40px;
+    font-family: 'lora',serif;
+}
+.section-6 h3{
+    color: rgb(221, 105, 62);
+    font-size: 15px;
+    font-family: 'lora',serif;
+}
+
 .section-6 p{
     font-size: 25px; 
 }
@@ -369,3 +378,13 @@ padding: 50px;
     font-size: 20px;
     color:brown;
 }
+.section-6 .group {
+    display: flex;
+    
+}
+
+.section-6 .group .card {
+    margin: 50px;
+    border-radius: 5px;
+    
+} 
