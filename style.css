@@ -13,26 +13,27 @@ header{
     height: 8vh;
     top: 0;
     left: 0;
-    background-color: bisque;
-    padding: 0 2rem;
     color: aliceblue;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     position: fixed;
 }
 nav{
+
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
+    background-color: bisque;
 }
 .logo{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-right: 50px;
 }
 .logo a{
     color: #000;
 }
-.logo a strong{
+.logo a strong i{
     color: orangered;
 }
 .toggle{
@@ -40,14 +41,16 @@ nav{
 }
 .menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     list-style: none;
     width: 1000px;
+    /* margin-left: 100px; */
 }
 .menu li a{
     color: #000;
     text-decoration: none;
+    padding: 20px;
 }
 .btn{
     border: 0;
@@ -57,7 +60,7 @@ nav{
     border-radius: 20px;
 }
 
-@media all and (max-width:600px) {
+@media all and (max-width:300px) {
     .toggle{
         display: block;
         font-size: 2rem;
@@ -102,10 +105,12 @@ nav{
 .section-1{
     background-color: bisque;
     padding: 70px;
+    
 }
 .section-1 .class-A{
     display: flex;
     width: 100%;
+    
 }
 .section-1 .class-A .text{
     width: 700px;
@@ -128,30 +133,33 @@ padding: 20px;
 }
 .section-1 .class-A .photo img{
     width: 500px;
+    /* padding-top: 20px; */
+    margin-top: 50px;
+}
+.section-1 button{
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .btn-1{
     color: aliceblue;
     background-color: orangered;
     border-radius: 10px;
     font-size: 20px;
-    padding: 10px 15px 10px 15px;
+    padding: 20px 15px 10px 15px;
 }
 .btn-2{
     color:black;
     background-color:white;
     border-radius: 10px;
     font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
     margin-left: 10px;
-}
-@media all and (max-width:600px){
-    .section-1 .class-A .photo img{
-        display: none;
-    } 
 }
 .section-1 .class-B {
     display: flex;
     padding: 10px;
+    padding-bottom: -20px;
 }
 .section-1 .class-B img{
     width: 50px;
@@ -167,11 +175,13 @@ padding: 20px;
     color: orangered;
 }
 
+
 /* section-2 */
-.section-2 h3{
+.section-2 h6{
     justify-content: center;
     align-self: center;
-    margin: 50px 500px 50px 500px;
+    width: 300px;
+    margin: 50px 300px 50px 300px;
     font-size: 22px;
     font-family: 'lora',serif;
     color: #6f6f6f;
@@ -296,17 +306,21 @@ padding: 50px;
 }
 
 .card .lister li{
-    list-style:orangered;
-   font-size: 22px; 
-   padding: 12px;
-   list-style-type: square;
+    list-style:none;
+   font-size: 25px; 
+   padding: 10px;
+}
+
+.card .lister li i{
+    color: rgb(214, 110, 62);
+    font-size: 30px;
 }
 .mets{
     display: flex;
-    padding: 12px;
+    padding: 15px;
 }
 .mets i, p{
-    font-size: 25px;
+    font-size: 30px;
 }
 .mets i{
     color: rgb(255, 196, 0);
@@ -314,6 +328,21 @@ padding: 50px;
 }
 
 /* .section-5 */
+.section-5 h2, h3{
+    /* margin: 50px; */
+    padding: 20px;
+    
+}
+.section-5 h2{
+    color:#626669;
+    font-size: 30px;
+    font-family: 'lora',serif;
+}
+.section-5 h3{
+    color: rgb(221, 105, 62);
+    font-size: 15px;
+    font-family: 'lora',serif;
+}
 .section-5 {
     display: flex;
     background-color: bisque;
@@ -344,9 +373,12 @@ padding: 50px;
     height: 200px;
     padding: 10px;
 }
+
 /* section-6 */
 .section-6{
 margin: 50px;
+justify-content: center;
+align-items: center;
     /* display: flex; */
 }
 .section-6 h2{
@@ -359,7 +391,10 @@ margin: 50px;
     font-size: 15px;
     font-family: 'lora',serif;
 }
-
+.section-6 h5, p{
+    justify-content: center;
+align-items: center;
+}
 .section-6 p{
     font-size: 25px; 
 }
@@ -380,11 +415,278 @@ margin: 50px;
 }
 .section-6 .group {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 50px 200px 50px 200px; */
+}
+ .section-6 .group .card {
+    padding: 50px;
+}  
+.section-6 .group .card button{
+    color: white;
+    background-color: rgb(24, 63, 24);
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 50px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.section-6 .card .card-1{
+    border-style: double;
+    border-radius: 10px;
+    border-color: red;
+    padding: 35px;
+    background-color:aliceblue;
+    width: 400px;
+}
+.section-6 .card .card-2{
+    border-radius: 10px;
+    background-color: rgb(241, 212, 175);
+    padding: 35px;
+    width: 400px;
+}
+.section-6 .card li{
+    list-style:none;
+   font-size: 22px; 
+   padding: 20px;
+}
+.section-6 .card li i{
+    color: orange;
+    font-size: 25px;
+}
+/* section7 */
+.section-7{
+    margin: 50px;
+}
+.section-7 .blocs{
+    display: flex;
+}
+.section-7 .blocs .bloc{
+    margin: 30px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.section-7 .para-4{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px 100px;
+}
+.section-7 h4{
+    font-size: 25px;
+    margin-top: 50px;
+}
+.section-7 .para-5{
+    font-size: 20px;
+}
+.section-7 i{
+    color: green;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    background-color: bisque;
+}
+/* section8 */
+.section-8{
+    background-color: rgb(121, 233, 233);
+    margin: 150px;
+    border-radius: 20px;
+    height: 510px;
+}
+.section-8 .card-groups{
+    display: flex;
+    margin: 30px;
+}
+.section-8 .card-group{
+    width: 80%;
+}
+.section-8 h1{
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.section-8 p{
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px  50px  50px ;
+}
+.section-8 img{
+    height: 510px;
+    width: 500px;
+    border-radius: 5px;
+}
+ .section-8 .mb{
+    display: flex;
+    padding: 0 0 50px 50px;
+} 
+ .section-8 .mb-3{
+    margin: 0 20px;
+} 
+.section-8 label, input, select, option{
+    font-size: 22px;
+}
+.section-8 input, select{
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+ 
+/* footer */
+footer{
+    margin: 50px;
+}
+footer .bloc{
+    width: 300px;
+}
+footer .footer-blocs{
+    display: flex;
+}
+footer p{
+    font-size: 20px;
+}
+footer .icon{
+    display: flex;
+    margin: 20px;
+}
+footer h4{
+    font-size: 22px;
+}
+footer .icon i{
+    padding: 10px;
+    font-size: 20px; 
+}
+footer .tfooter{
+    font-size: 20px;
+}
+footer .tfooter i{
+    color: orangered;
+}
+footer .bloc{
+    margin: 30px;
+}
+footer .camp a{
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    justify-content: space-between;
     
 }
-
-.section-6 .group .card {
-    margin: 50px;
-    border-radius: 5px;
+@media all and (max-width:300px){
+    .section-1{
+      display: grid;
+      grid-template-rows: auto;
+      background-color: aliceblue;
+    } 
     
-} 
+    .section-1 .class-A{
+        display: grid;
+        grid-template-rows: auto;
+        background-color: aliceblue;
+    }
+    .section-1 h1, p{
+        width:400px;
+    }
+    /* .section-1 .class-B{
+        width: 100%;
+        font-size: 10px;
+    } */
+    
+    .section-2{
+    width: 400px;
+    }
+    .section-2 img{
+        display: grid;
+        grid-template-rows: auto;
+    }
+    .section-3 h2,h3{
+        width: 300px;
+    }
+    .section-3 .class-D{
+        display: grid;
+        grid-template-rows:auto ;
+    }
+    
+    .section-4{
+        background-color:rgb(179, 245, 239) ;
+    
+    }
+    
+    /* .section-4 h2,h3{
+        width: 300px;
+    } */
+    .section-4 .class-E{
+        display: grid;
+        grid-template-rows:auto ;
+    }
+    .section-5{
+        display: grid;
+        grid-template-rows:auto ; 
+        background-color: ;
+    }
+    
+    .section-5 h2,h3{
+        width: 300px;
+    }
+    .section-5 .part{
+        display: grid;
+        grid-template-columns:auto ;
+    }
+    
+    .section-5 .card-group{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .section-5 .cards{
+        width: 400px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .section-6 h2, h3{
+        width: 300px;
+    }
+    .section-6 .group{
+        display: grid;
+        grid-template-rows: auto;
+       padding-left: 120px;
+       justify-content: center;
+    }
+    .section-7 {
+        width: 300px;
+    }
+    .section-7 .blocs{
+        display: grid;
+        grid-template-rows: auto;
+    }
+    
+    .section-8 {
+        background-color: white;
+        display: grid;
+        grid-template-rows: auto;
+    }
+    .section-8 .card-groups{
+        display: grid;
+        grid-template-rows: auto;
+    }
+    /* .section-8 .card-group{
+        display: grid;
+        grid-template-columns: auto;
+    } */
+   .section-8 .mb{
+    display: grid;
+    grid-template-rows: auto;
+   }
+   footer{
+    background-color: rgb(245, 201, 208);
+   }
+   footer .footer-blocs{
+    display: grid;
+    grid-template-rows: auto;
+    width: 300px;
+   }
+   
+}
